@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>app-library</groupId>
+	<artifactId>app-library</artifactId>
+	<version>0</version>
+	<packaging>jar</packaging>
+
+	<name>app-library</name>
+	<description>library for Spring Boot</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+		<relativePath/>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>17</java.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<version>3.0.0-M4</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+			<version>3.0.0-M4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+			<version>3.0.0-M4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>3.0.0-M4</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!--   for spring boot 3 Start    -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+			<version>3.0.0-M4</version>
+		</dependency>
+		<!--   for spring boot 3 End  -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>3.0.0-M4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<version>5.7.3</version>
+			<scope>test</scope>
+		</dependency>
+		<!--   for spring boot 3 Start (security-config)  -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>6.0.0-M6</version>
+		</dependency>
+		<!--   for spring boot 3 End (security-config) -->
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+			<version>3.0.0-RC1</version>
+		</dependency>
+
+		<!--    R2DBC Connector Start   -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-r2dbc</artifactId>
+			<version>3.0.0-M5</version>
+		</dependency>
+		<!--    R2DBC Connector End     -->
+
+		<!--    R2DBC Postgresql Connector Start    -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>r2dbc-postgresql</artifactId>
+			<version>1.0.0.RELEASE</version>
+		</dependency>
+		<!--    R2DBC Postgresql Connector End      -->
+
+		<!--    Postgresql Start    -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.5.0</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!--    Postgresql End      -->
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<version>3.5.0-RC1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
+		<!--	  &lt;!&ndash;    Swagger Start   &ndash;&gt;-->
+		<!--		  <dependency>-->
+		<!--			 <groupId>io.springfox</groupId>-->
+		<!--			 <artifactId>springfox-swagger2</artifactId>-->
+		<!--			 <version>3.0.0</version>-->
+		<!--		  </dependency>-->
+		<!--		  <dependency>-->
+		<!--			 <groupId>io.springfox</groupId>-->
+		<!--			 <artifactId>springfox-swagger-ui</artifactId>-->
+		<!--			 <version>3.0.0</version>-->
+		<!--		  </dependency>-->
+		<!--	  &lt;!&ndash;    Swagger End    &ndash;&gt;-->
+
+		<!--		<dependency>-->
+		<!--			<groupId>io.springfox</groupId>-->
+		<!--			<artifactId>springfox-boot-starter</artifactId>-->
+		<!--			<version>3.0.0</version>-->
+		<!--		</dependency>-->
+		<!--		<dependency>-->
+		<!--			<groupId>io.springfox</groupId>-->
+		<!--			<artifactId>springfox-spring-webflux</artifactId>-->
+		<!--			<version>3.0.0</version>-->
+		<!--		</dependency>-->
+
+		<!--    QR    Start  -->
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.5.13.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.glxn</groupId>
+			<artifactId>qrgen</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!--    QR    End       -->
+
+		<!--    Encrypt Start -->
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+		<!--    Encrypt End   -->
+
+		<!-- start jasper report -->
+		<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.20.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-fonts -->
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-fonts</artifactId>
+			<version>6.20.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/ar.com.fdvs/DynamicJasper -->
+		<dependency>
+			<groupId>ar.com.fdvs</groupId>
+			<artifactId>DynamicJasper</artifactId>
+			<version>5.3.6</version>
+		</dependency>
+
+		<!-- end jasper report -->
+
+	</dependencies>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.0.0-SNAPSHOT</version>
+				<configuration>
+					<includeSystemScope>true</includeSystemScope>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.2</version>
+			</plugin>
+
+			<plugin>
+				<groupId>com.github.ulisesbocchio</groupId>
+				<artifactId>jasypt-maven-plugin</artifactId>
+				<version>3.0.3</version>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<repositories>
+
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+
+	</repositories>
+
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+
+	</pluginRepositories>
+
+</project>
