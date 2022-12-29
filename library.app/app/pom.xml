@@ -29,26 +29,26 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>3.0.0-M4</version>
+			<version>3.0.1</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
-			<version>3.0.0-M4</version>
+			<version>3.0.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
-			<version>3.0.0-M4</version>
+			<version>3.0.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<version>3.0.0-M4</version>
+			<version>3.0.1</version>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -56,14 +56,14 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>3.0.0-M4</version>
+			<version>3.0.1</version>
 		</dependency>
 		<!--   for spring boot 3 End  -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-			<version>3.0.0-M4</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -82,14 +82,13 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-commons</artifactId>
-			<version>3.0.0-RC1</version>
 		</dependency>
 
 		<!--    R2DBC Connector Start   -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-r2dbc</artifactId>
-			<version>3.0.0-M5</version>
+			<version>3.0.1</version>
 		</dependency>
 		<!--    R2DBC Connector End     -->
 
@@ -105,7 +104,6 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.5.0</version>
 			<scope>runtime</scope>
 		</dependency>
 		<!--    Postgresql End      -->
@@ -154,30 +152,6 @@
 			<version>3.0.2</version>
 		</dependency>
 
-		<!--	  &lt;!&ndash;    Swagger Start   &ndash;&gt;-->
-		<!--		  <dependency>-->
-		<!--			 <groupId>io.springfox</groupId>-->
-		<!--			 <artifactId>springfox-swagger2</artifactId>-->
-		<!--			 <version>3.0.0</version>-->
-		<!--		  </dependency>-->
-		<!--		  <dependency>-->
-		<!--			 <groupId>io.springfox</groupId>-->
-		<!--			 <artifactId>springfox-swagger-ui</artifactId>-->
-		<!--			 <version>3.0.0</version>-->
-		<!--		  </dependency>-->
-		<!--	  &lt;!&ndash;    Swagger End    &ndash;&gt;-->
-
-		<!--		<dependency>-->
-		<!--			<groupId>io.springfox</groupId>-->
-		<!--			<artifactId>springfox-boot-starter</artifactId>-->
-		<!--			<version>3.0.0</version>-->
-		<!--		</dependency>-->
-		<!--		<dependency>-->
-		<!--			<groupId>io.springfox</groupId>-->
-		<!--			<artifactId>springfox-spring-webflux</artifactId>-->
-		<!--			<version>3.0.0</version>-->
-		<!--		</dependency>-->
-
 		<!--    QR    Start  -->
 		<dependency>
 			<groupId>com.itextpdf</groupId>
@@ -196,7 +170,7 @@
 		<dependency>
 			<groupId>com.github.ulisesbocchio</groupId>
 			<artifactId>jasypt-spring-boot-starter</artifactId>
-			<version>3.0.4</version>
+			<version>3.0.5</version>
 		</dependency>
 		<!--    Encrypt End   -->
 
@@ -233,7 +207,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.0.0-SNAPSHOT</version>
+				<version>3.0.1</version>
 				<configuration>
 					<includeSystemScope>true</includeSystemScope>
 				</configuration>

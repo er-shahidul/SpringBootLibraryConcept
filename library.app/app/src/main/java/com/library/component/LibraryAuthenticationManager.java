@@ -36,12 +36,14 @@ public class LibraryAuthenticationManager implements ReactiveAuthenticationManag
                 Claims claims = jwtUtil.getAllClaimsFromToken(authToken);
                 List<String> rolesMap = claims.get("role", List.class);
                 String identity = claims.get("identity", String.class);
+                String privilege = claims.get("privilege", String.class);
                 UsernamePasswordAuthenticationToken result = new UsernamePasswordAuthenticationToken(
                     username,
                     null,
                     rolesMap.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList())
                 );
                 result.setDetails(identity);
+                result.setDetails(privilege);
                 return result;
             });
     }
